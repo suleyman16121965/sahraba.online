@@ -46,10 +46,10 @@
     display:none;
     position:absolute;
     background:white;
-    min-width:180px;
+    min-width:350px;
     box-shadow:0 2px 5px rgba(0,0,0,0.2);
     border-radius:6px;
-    padding:10px 0;
+    padding:15px;
     z-index:100;
   }
   .dropdown-content a {
@@ -100,20 +100,6 @@
   /* Container */
   .container { width:90%; max-width:1200px; margin:auto; }
 
-  /* Booking Button */
-  .booking-btn {
-    padding:12px 25px;
-    background:#0071c2;
-    color:white;
-    border-radius:8px;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
-  }
-  .booking-btn:hover {
-    background:#005a9c;
-  }
-
   /* Hotel Grid */
   .hotel-grid {
     display:flex;
@@ -147,11 +133,34 @@
 <div class="top-nav">
   <div class="logo">SAHRABA TRAVEL</div>
   <ul>
-    <li><a href="#flights">Flights</a></li>
 
+    <!-- Flights Menu with Widget -->
+    <li>
+      <a href="#flights">Flights ▼</a>
+
+      <div class="dropdown-content">
+        <p style="color:#0071c2; font-weight:bold; margin-bottom:10px;">Search Flights</p>
+
+        <!-- Travelpayouts Flight Widget INSIDE MENU -->
+        <script async src="https://tp.media/content?currency=usd&trs=264258&shmarker=503475&searchUrl=www.aviasales.com%2Fsearch&locale=en&powered_by=true&promo_id=7879&campaign_id=100"></script>
+
+        <hr style="margin:10px 0;">
+
+        <a href="https://www.aviasales.com/search" target="_blank">Open Full Flight Search</a>
+        <a href="#">Direct Flights: Azerbaijan → Ercan</a>
+        <a href="#">Cheap Flights</a>
+        <a href="#">Charter Flights</a>
+      </div>
+    </li>
+
+    <!-- Hotels Menu with Booking.com -->
     <li>
       <a href="#hotels">Hotels ▼</a>
       <div class="dropdown-content">
+        <a href="https://www.booking.com/index.en-gb.html?aid=XXXXXX" target="_blank">
+          Booking.com Hotels
+        </a>
+        <hr>
         <a href="#">Kyrenia Hotels</a>
         <a href="#">Famagusta Hotels</a>
         <a href="#">Nicosia Hotels</a>
@@ -179,17 +188,6 @@
 </div>
 
 <div class="container">
-
-  <!-- Flight Widget -->
-  <h2 id="flights" style="text-align:left; margin-top:30px;">Flight Bookings</h2>
-  <script async src="https://tp.media/content?currency=usd&trs=264258&shmarker=503475&searchUrl=www.aviasales.com%2Fsearch&locale=en&powered_by=true&promo_id=7879&campaign_id=100"></script>
-
-  <!-- Booking Button -->
-  <div style="text-align:center; margin-top:30px;">
-    <a href="https://www.booking.com/?aid=XXXXXX" target="_blank" class="booking-btn">
-      View Booking.com Hotels
-    </a>
-  </div>
 
   <!-- Hotels -->
   <h2 id="hotels" style="text-align:center; margin-top:40px;">North Cyprus Hotels</h2>
