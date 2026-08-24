@@ -41,12 +41,12 @@
     text-decoration:underline;
   }
 
-  /* Dropdown Menu */
+  /* Dropdown Menu (Hotels) */
   .dropdown-content {
     display:none;
     position:absolute;
     background:white;
-    min-width:350px;
+    min-width:300px;
     box-shadow:0 2px 5px rgba(0,0,0,0.2);
     border-radius:6px;
     padding:15px;
@@ -63,6 +63,23 @@
     background:#f0f0f0;
   }
   .top-nav ul li:hover .dropdown-content {
+    display:block;
+  }
+
+  /* MEGA MENU (Flights) */
+  .mega-menu {
+    display:none;
+    position:absolute;
+    left:0;
+    top:100%;
+    background:white;
+    width:650px;
+    padding:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+    border-radius:10px;
+    z-index:1000;
+  }
+  .top-nav ul li:hover .mega-menu {
     display:block;
   }
 
@@ -134,44 +151,36 @@
   <div class="logo">SAHRABA TRAVEL</div>
   <ul>
 
-    <!-- Flights Menu with Widget -->
+    <!-- FLIGHTS MEGA MENU -->
     <li>
-  <a href="#flights">Flights ▼</a>
+      <a href="#flights">Flights ▼</a>
+      <div class="mega-menu">
+        <h3 style="color:#0071c2; margin-top:0;">Flight Search</h3>
 
-  <!-- MEGA MENU: FULL WIDTH FLIGHT SEARCH -->
-  <div class="mega-menu" style="width:650px; padding:20px;">
+        <!-- Travelpayouts Flight Widget -->
+        <script async
+          src="https://tp.media/content?currency=usd&trs=264258&shmarker=503475&searchUrl=www.aviasales.com%2Fsearch&locale=en&powered_by=true&promo_id=7879&campaign_id=100">
+        </script>
 
-    <h3 style="color:#0071c2; margin-top:0;">Flight Search</h3>
+        <hr style="margin:15px 0;">
 
-    <!-- FULL Travelpayouts Flight Widget -->
-    <script async 
-      src="https://tp.media/content?currency=usd&trs=264258&shmarker=503475
-      &searchUrl=www.aviasales.com%2Fsearch
-      &locale=en&powered_by=true
-      &promo_id=7879&campaign_id=100">
-    </script>
+        <a href="https://www.aviasales.com/search"
+           target="_blank"
+           style="color:#0071c2; font-weight:bold;">
+          Open Full Flight Search
+        </a>
+      </div>
+    </li>
 
-    <hr style="margin:15px 0;">
-
-    <a href="https://www.aviasales.com/search" 
-       target="_blank" 
-       style="color:#0071c2; font-weight:bold;">
-       Open Full Flight Search
-    </a>
-
-  </div>
-</li>
-
-
-    <!-- Hotels Menu with KLOOK HOTELS -->
+    <!-- HOTELS DROPDOWN (KLOOK) -->
     <li>
       <a href="#hotels">Hotels ▼</a>
       <div class="dropdown-content">
-
-        <!-- KLOOK HOTEL SEARCH WIDGET -->
         <p style="color:#0071c2; font-weight:bold; margin-bottom:10px;">Klook Hotel Search</p>
 
-        <script async src="https://tp.media/content?currency=usd&trs=264258&shmarker=503475&searchUrl=www.klook.com%2Fhotel&locale=en&powered_by=true&promo_id=7879&campaign_id=100"></script>
+        <script async
+          src="https://tp.media/content?currency=usd&trs=264258&shmarker=503475&searchUrl=www.klook.com%2Fhotel&locale=en&powered_by=true&promo_id=7879&campaign_id=100">
+        </script>
 
         <hr>
 
