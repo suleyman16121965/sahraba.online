@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lefkoşa Hotels – Sahraba Travel</title>
+
+<style>
+/* BACKGROUND ANIMATION */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #f6f9fc, #e9f0ff, #dfe9f3);
+    background-size: 300% 300%;
+    animation: bgMove 12s infinite alternate;
+}
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* MAIN MENU BUTTON */
+.back-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff6b6b, #f7d794);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 20px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.back-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #f7d794, #ff6b6b);
+}
+
+/* TITLE */
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+/* HOTEL GRID */
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* HOTEL CARD */
+.hotel-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: 0.4s;
+    animation: floatAnim 3s ease-in-out infinite;
+}
+.hotel-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* IMAGE */
+.hotel-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.hotel-img:hover {
+    transform: scale(1.05);
+}
+
+/* TEXT */
+.hotel-info {
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* FLOAT ANIMATION */
+@keyframes floatAnim {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+</style>
+
+</head>
+<body>
+
+<a href="index.html" class="back-btn">⟵ MAIN MENU</a>
+
+<h1 class="page-title">LEFKOŞA HOTELS</h1>
+
+<div class="hotel-grid">
+
+    <div class="hotel-card">
+        <img src="images/meritlefkosa.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Merit Lefkoşa Hotel</strong><br>
+            Luxury city hotel. Spa, casino, restaurants. 5-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/goldenTulip.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Golden Tulip Lefkoşa</strong><br>
+            Modern business hotel. Pool, gym, meeting rooms. 4-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/semiramis.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Semiramis Hotel</strong><br>
+            City center location. Breakfast included. 3-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/cityRoyal.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>City Royal Hotel</strong><br>
+            Comfortable rooms, casino, restaurant. 4-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/lefkosaBoutique.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Lefkoşa Boutique Hotel</strong><br>
+            Small boutique hotel. Perfect for couples. Breakfast included.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
