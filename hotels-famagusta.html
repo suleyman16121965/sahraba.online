@@ -1,64 +1,151 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="en-gb" http-equiv="Content-Language" />
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>FAMAGUSTA -GAZIMAGUSA&nbsp; HOTELS</title>
-<style type="text/css">
-.auto-style1 {
-	margin-left: 40px;
-	font-size: x-large;
+<meta charset="UTF-8">
+<title>Famagusta Hotels – Sahraba Travel</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/* BACKGROUND ANIMATION */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #f6f9fc, #e9f0ff, #dfe9f3);
+    background-size: 300% 300%;
+    animation: bgMove 12s infinite alternate;
 }
-.auto-style2 {
-	font-size: x-large;
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* MAIN MENU BUTTON */
+.back-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff6b6b, #f7d794);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 20px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.back-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #f7d794, #ff6b6b);
+}
+
+/* TITLE */
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+/* HOTEL GRID */
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* HOTEL CARD */
+.hotel-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: 0.4s;
+    animation: floatAnim 3s ease-in-out infinite;
+}
+.hotel-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* IMAGE */
+.hotel-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.hotel-img:hover {
+    transform: scale(1.05);
+}
+
+/* TEXT */
+.hotel-info {
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* FLOAT ANIMATION */
+@keyframes floatAnim {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<p class="auto-style1"><strong>FAMAGUSTA -GAZIMAGUSA&nbsp; HOTELS&nbsp;&nbsp;&nbsp; 
-</strong> </p>
-<table style="width: 100%">
-	<tr>
-		<td style="width: 778px">
-		<img height="400" src="images/gq13atrm.png" width="780" /></td>
-		<td style="width: 604px"><span class="auto-style2">PALM BEACH HOTEL</span>:EXCUSITE 
-		PLACE FOR ALL.ALL INCLUSIVE FACITITLES. HALF BOARD AND FULL BOARD.4STAR 
-		HOTEL</td>
-	</tr>
-	<tr>
-		<td style="width: 778px; height: 464px">
-		<img height="460" src="images/northcyprusbeach.jpg" width="787" /></td>
-		<td style="width: 604px; height: 464px"><span class="auto-style2">
-		KARPAZIA HOTEL</span>:EXCUSITE PLACE FOR ALL.ALL INCLUSIVE FACITITLES. 
-		HALF BOARD AND FULL BOARD.4STAR HOTEL</td>
-	</tr>
-	<tr>
-		<td style="width: 778px">
-		<img alt="" height="400" src="images/salamisbeyoteli.png" width="780" /></td>
-		<td style="width: 604px">SALAMIS BAY HOTEL:EXCUSITE PLACE FOR ALL.ALL 
-		INCLUSIVE FACITITLES. HALF BOARD AND FULL BOARD.4STAR HOTEL</td>
-	</tr>
-	<tr>
-		<td style="width: 778px">
-		<img alt="" height="320" src="images/cratospremium.png" width="781" /></td>
-		<td style="width: 604px">MERIT HOTEL FAMAGUSTA:EXCUSITE PLACE FOR 
-		ALL.ALL INCLUSIVE FACITITLES. HALF BOARD AND FULL BOARD.4STAR HOTEL</td>
-	</tr>
-	<tr>
-		<td style="width: 778px">
-		<img alt="" height="320" src="images/kayaartimis.png" width="776" /></td>
-		<td style="width: 604px">ARTEMIS HOTEL:EXCUSITE PLACE FOR ALL.ALL 
-		INCLUSIVE FACITITLES. HALF BOARD AND FULL BOARD.4STAR HOTEL</td>
-	</tr>
-	<tr>
-		<td style="width: 778px">&nbsp;</td>
-		<td style="width: 604px">&nbsp;</td>
-	</tr>
-</table>
+<a href="index.html" class="back-btn">⟵ MAIN MENU</a>
+
+<h1 class="page-title">FAMAGUSTA – GAZİMAĞUSA HOTELS</h1>
+
+<div class="hotel-grid">
+
+    <div class="hotel-card">
+        <img src="images/gq13atrm.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Palm Beach Hotel</strong><br>
+            Exquisite place for all. All-inclusive facilities. Half board & full board. 4-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/northcyprusbeach.jpg" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Karpazia Hotel</strong><br>
+            Beautiful beach location. All-inclusive facilities. Half board & full board. 4-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/salamisbeyoteli.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Salamis Bay Hotel</strong><br>
+            Luxury resort with full facilities. All-inclusive. Half board & full board. 4-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/cratospremium.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Merit Hotel Famagusta</strong><br>
+            Premium comfort. All-inclusive facilities. Half board & full board. 4-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/kayaartimis.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Artemis Hotel</strong><br>
+            Elegant stay with full facilities. All-inclusive. Half board & full board. 4-star hotel.
+        </div>
+    </div>
+
+</div>
 
 </body>
-
 </html>
