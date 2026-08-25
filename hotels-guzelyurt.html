@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Güzelyurt Hotels – Sahraba Travel</title>
+
+<style>
+/* BACKGROUND ANIMATION */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #f6f9fc, #e9f0ff, #dfe9f3);
+    background-size: 300% 300%;
+    animation: bgMove 12s infinite alternate;
+}
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* MAIN MENU BUTTON */
+.back-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff6b6b, #f7d794);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 20px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.back-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #f7d794, #ff6b6b);
+}
+
+/* TITLE */
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+/* HOTEL GRID */
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* HOTEL CARD */
+.hotel-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: 0.4s;
+    animation: floatAnim 3s ease-in-out infinite;
+}
+.hotel-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* IMAGE */
+.hotel-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.hotel-img:hover {
+    transform: scale(1.05);
+}
+
+/* TEXT */
+.hotel-info {
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* FLOAT ANIMATION */
+@keyframes floatAnim {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+</style>
+
+</head>
+<body>
+
+<a href="index.html" class="back-btn">⟵ MAIN MENU</a>
+
+<h1 class="page-title">GÜZELYURT HOTELS</h1>
+
+<div class="hotel-grid">
+
+    <div class="hotel-card">
+        <img src="images/guzelyurtnature.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Güzelyurt Nature Resort</strong><br>
+            Surrounded by orange gardens. Peaceful, natural environment. 4-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/guzelyurtcity.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Güzelyurt City Hotel</strong><br>
+            Located in the town center. Breakfast included. 3-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/guzelyurtboutique.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Güzelyurt Boutique Hotel</strong><br>
+            Small boutique hotel. Perfect for couples. Traditional Cypriot style.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/guzelyurtbeach.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Güzelyurt Beach Hotel</strong><br>
+            Beachfront location. Sea view rooms. Family-friendly. 4-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/guzelyurtvillage.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Güzelyurt Village Lodge</strong><br>
+            Village-style accommodation. Quiet and relaxing. Breakfast included.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
