@@ -39,4 +39,111 @@ body {
 /* TITLE */
 .page-title {
     text-align: center;
-    font
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+/* HOTEL GRID */
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* HOTEL CARD */
+.hotel-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: 0.4s;
+    animation: floatAnim 3s ease-in-out infinite;
+}
+.hotel-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* IMAGE */
+.hotel-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.hotel-img:hover {
+    transform: scale(1.05);
+}
+
+/* TEXT */
+.hotel-info {
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* FLOAT ANIMATION */
+@keyframes floatAnim {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+</style>
+
+</head>
+<body>
+
+<a href="index.html" class="back-btn">⟵ MAIN MENU</a>
+
+<h1 class="page-title">LEFKE HOTELS</h1>
+
+<div class="hotel-grid">
+
+    <div class="hotel-card">
+        <img src="images/lefkeorchard.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Lefke Orchard Hotel</strong><br>
+            Surrounded by citrus gardens. Peaceful and natural. 4-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/lefkeBoutique.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Lefke Boutique Hotel</strong><br>
+            Small boutique hotel with traditional Cypriot architecture. Breakfast included.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/lefkeSea.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Lefke Sea View Hotel</strong><br>
+            Beautiful sea view rooms. Quiet and relaxing. 3-star hotel.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/lefkeVillage.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Lefke Village Lodge</strong><br>
+            Village-style accommodation. Perfect for nature lovers. Breakfast included.
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="images/lefkeEco.png" class="hotel-img">
+        <div class="hotel-info">
+            <strong>Lefke Eco Retreat</strong><br>
+            Eco-friendly wooden bungalows. Ideal for couples seeking peace.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
