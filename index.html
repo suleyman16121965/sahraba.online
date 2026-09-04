@@ -166,6 +166,18 @@
 <footer>
   © 2026 SAHRABA TRAVEL – All Rights Reserved
 </footer>
+<div id="counter" style="text-align: center; margin-top: 20px;">
+  <p>Visitor Counter:</p>
+  <span id="visitCount">0</span>
+</div>
+
+<script>
+  // Simple visitor counter example (increments on each page load)
+  let count = localStorage.getItem('visitCount') || 0;
+  count = parseInt(count) + 1;
+  localStorage.setItem('visitCount', count);
+  document.getElementById('visitCount').innerText = count;
+</script>
 
 </body>
 </html>
