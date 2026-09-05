@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Sahraba Travel – North Cyprus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body { margin:0; font-family:Arial, sans-serif; background:#f2f2f2; }
+
+  header {
+    background:#003366;
+    color:white;
+    padding:25px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    animation: fadeIn 1.2s ease forwards;
+  }
+
+  .container {
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    margin-top:40px;
+  }
+
+  .box {
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:40px;
+    animation: fadeIn 1.2s ease forwards;
+  }
+
+  .title {
+    font-size:26px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:bold;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .about-images {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+  }
+
+  .about-images img {
+    width:260px;
+    height:170px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.4s ease;
+  }
+
+  .about-images img:hover {
+    transform:scale(1.06);
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+  }
+
+  footer {
+    margin-top:60px;
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>About Sahraba Travel</header>
+
+<div class="container">
+
+  <!-- ⭐ INTRO ⭐ -->
+  <div class="box">
+    <div class="title">Who We Are</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      Sahraba Travel is a modern travel service platform focused on North Cyprus.  
+      We provide flights, hotels, transfers, tours, car hire, taxi booking and complete travel planning.  
+      Our goal is to make your trip smooth, affordable and unforgettable.
+    </p>
+
+    <div class="about-images">
+      <img src="images/karpaz.jpg" alt="North Cyprus Nature">
+      <img src="images/bellapais.jpg" alt="Bellapais Monastery">
+      <img src="images/CPRUS2.jpg" alt="Kyrenia Coast">
+    </div>
+  </div>
+
+  <!-- ⭐ MISSION ⭐ -->
+  <div class="box">
+    <div class="title">Our Mission</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      To provide reliable, fast and friendly travel services for visitors coming to North Cyprus.  
+      We aim to offer the best prices, the best support and the best travel experience.
+    </p>
+  </div>
+
+  <!-- ⭐ WHY CHOOSE US ⭐ -->
+  <div class="box">
+    <div class="title">Why Choose Sahraba Travel?</div>
+
+    <ul style="font-size:18px; line-height:1.8;">
+      <li>✔ 24/7 customer support</li>
+      <li>✔ Fast booking for flights, hotels and transfers</li>
+      <li>✔ Local knowledge of North Cyprus</li>
+      <li>✔ Affordable prices</li>
+      <li>✔ Trusted by travelers worldwide</li>
+    </ul>
+  </div>
+
+  <!-- ⭐ SERVICES ⭐ -->
+  <div class="box">
+    <div class="title">Our Services</div>
+
+    <ul style="font-size:18px; line-height:1.8;">
+      <li>✈️ Flight Search</li>
+      <li>🏨 Hotel Booking</li>
+      <li>🚕 Airport Transfers</li>
+      <li>🎟️ Tours & Activities</li>
+      <li>🚗 Car Hire</li>
+      <li>🚖 Taxi Booking</li>
+      <li>📅 Event Information</li>
+      <li>📘 North Cyprus Travel Guide</li>
+    </ul>
+  </div>
+
+  <!-- ⭐ CONTACT ⭐ -->
+  <div class="box">
+    <div class="title">Contact Us</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      📞 Phone: +90 533 000 0000<br>
+      💬 WhatsApp: <a href="https://wa.me/905330000000" style="color:#0078ff;">Chat Now</a><br>
+      ✉️ Email: info@sahraba.com<br>
+      📍 Location: Kyrenia, North Cyprus
+    </p>
+
+    <div style="margin-top:20px; text-align:center;">
+      <a href="contactpage.html"
+         style="padding:12px 25px; background:#0078ff; color:white; text-decoration:none; border-radius:8px; font-size:18px;">
+         Go to Contact Page
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 SAHRABA TRAVEL – All Rights Reserved
+</footer>
+
+</body>
+</html>
