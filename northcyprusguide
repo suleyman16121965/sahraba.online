@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>North Cyprus Guide – SAHRABA TRAVEL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body { margin:0; font-family:Arial, sans-serif; background:#f2f2f2; }
+
+  header {
+    background:#003366;
+    color:white;
+    padding:25px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    animation: fadeIn 1.2s ease forwards;
+  }
+
+  .container {
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    margin-top:40px;
+  }
+
+  .box {
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:40px;
+    animation: fadeIn 1.2s ease forwards;
+  }
+
+  .title {
+    font-size:26px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:bold;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .guide-images {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+  }
+
+  .guide-images img {
+    width:260px;
+    height:170px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.4s ease;
+  }
+
+  .guide-images img:hover {
+    transform:scale(1.06);
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+  }
+
+  footer {
+    margin-top:60px;
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>North Cyprus Travel Guide</header>
+
+<div class="container">
+
+  <!-- ⭐ INTRO ⭐ -->
+  <div class="box">
+    <div class="title">Welcome to North Cyprus</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      North Cyprus is one of the Mediterranean’s hidden gems.  
+      With beautiful beaches, historic towns, friendly locals and affordable prices,  
+      it’s a perfect destination for holidays, long stays and exploration.
+    </p>
+
+    <div class="guide-images">
+      <img src="images/karpaz.jpg" alt="Karpaz Golden Beach">
+      <img src="images/bellapais.jpg" alt="Bellapais Monastery">
+      <img src="images/CPRUS2.jpg" alt="Kyrenia Coast">
+    </div>
+  </div>
+
+  <!-- ⭐ REGIONS ⭐ -->
+  <div class="box">
+    <div class="title">Main Regions</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      North Cyprus is divided into several key regions, each offering unique experiences:
+    </p>
+
+    <ul style="font-size:18px; line-height:1.8;">
+      <li><strong>Kyrenia (Girne):</strong> Harbour, castle, beaches, nightlife.</li>
+      <li><strong>Famagusta (Mağusa):</strong> Palm Beach, ancient ruins, old town.</li>
+      <li><strong>Iskele:</strong> Long beaches, resorts, calm atmosphere.</li>
+      <li><strong>Karpaz:</strong> Golden Beach, nature, wild donkeys.</li>
+      <li><strong>Lefkoşa (Nicosia):</strong> Capital city, museums, old streets.</li>
+      <li><strong>Lefke & Güzelyurt:</strong> Nature, citrus gardens, peaceful villages.</li>
+    </ul>
+  </div>
+
+  <!-- ⭐ HISTORICAL SITES ⭐ -->
+  <div class="box">
+    <div class="title">Historical Sites</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      North Cyprus has thousands of years of history:
+    </p>
+
+    <ul style="font-size:18px; line-height:1.8;">
+      <li>Kyrenia Castle</li>
+      <li>Bellapais Monastery</li>
+      <li>Salamis Ancient City</li>
+      <li>St. Barnabas Monastery</li>
+      <li>Othello Tower</li>
+      <li>Buffavento Castle</li>
+    </ul>
+  </div>
+
+  <!-- ⭐ BEACHES ⭐ -->
+  <div class="box">
+    <div class="title">Best Beaches</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      North Cyprus is famous for its clean and natural beaches:
+    </p>
+
+    <ul style="font-size:18px; line-height:1.8;">
+      <li>Golden Beach (Karpaz)</li>
+      <li>Alagadi Turtle Beach</li>
+      <li>Escape Beach</li>
+      <li>Glapsides Beach</li>
+      <li>Palm Beach</li>
+    </ul>
+  </div>
+
+  <!-- ⭐ TRANSPORTATION ⭐ -->
+  <div class="box">
+    <div class="title">Transportation</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      - Main airport: <strong>Ercan Airport (ECN)</strong><br>
+      - Taxis available 24/7<br>
+      - Car hire recommended for full freedom<br>
+      - Buses available between major towns<br>
+    </p>
+  </div>
+
+  <!-- ⭐ WEATHER ⭐ -->
+  <div class="box">
+    <div class="title">Weather</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      North Cyprus has a warm Mediterranean climate:
+    </p>
+
+    <ul style="font-size:18px; line-height:1.8;">
+      <li><strong>Summer:</strong> 30–38°C</li>
+      <li><strong>Spring:</strong> 20–28°C</li>
+      <li><strong>Autumn:</strong> 22–30°C</li>
+      <li><strong>Winter:</strong> 12–18°C</li>
+    </ul>
+  </div>
+
+  <!-- ⭐ CULTURE ⭐ -->
+  <div class="box">
+    <div class="title">Culture & Lifestyle</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      North Cyprus is known for its hospitality, relaxed lifestyle,  
+      delicious food, and strong Mediterranean traditions.
+    </p>
+  </div>
+
+  <!-- ⭐ MONEY & VISA ⭐ -->
+  <div class="box">
+    <div class="title">Money & Visa</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      - Currency: <strong>Turkish Lira (TRY)</strong><br>
+      - Most tourists enter <strong>visa-free</strong><br>
+      - Credit cards widely accepted<br>
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 SAHRABA TRAVEL – All Rights Reserved
+</footer>
+
+</body>
+</html>
