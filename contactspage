@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Sahraba Travel – North Cyprus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body { margin:0; font-family:Arial, sans-serif; background:#f2f2f2; }
+
+  header {
+    background:#003366;
+    color:white;
+    padding:25px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    animation: fadeIn 1.2s ease forwards;
+  }
+
+  .container {
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    margin-top:40px;
+  }
+
+  .box {
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:40px;
+    animation: fadeIn 1.2s ease forwards;
+  }
+
+  .title {
+    font-size:26px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:bold;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ⭐ CONTACT IMAGES ⭐ */
+  .contact-images {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+  }
+
+  .contact-images img {
+    width:260px;
+    height:170px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.4s ease;
+  }
+
+  .contact-images img:hover {
+    transform:scale(1.06);
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+  }
+
+  /* ⭐ FORM ⭐ */
+  .form-input {
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+  }
+
+  .form-button {
+    width:100%;
+    padding:14px;
+    background:#0078ff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s ease;
+  }
+
+  .form-button:hover {
+    background:#005fcc;
+  }
+
+  footer {
+    margin-top:60px;
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>Contact Sahraba Travel</header>
+
+<div class="container">
+
+  <!-- ⭐ CONTACT INTRO ⭐ -->
+  <div class="box">
+    <div class="title">Get in Touch</div>
+
+    <p style="font-size:18px; line-height:1.6;">
+      Need help with flights, hotels, transfers, tours or travel planning?  
+      Sahraba Travel is here to assist you 24/7.  
+      You can contact us via WhatsApp, email or the form below.
+    </p>
+
+    <div class="contact-images">
+      <img src="images/karpaz.jpg" alt="North Cyprus">
+      <img src="images/bellapais.jpg" alt="Bellapais">
+      <img src="images/CPRUS2.jpg" alt="Kyrenia">
+    </div>
+  </div>
+
+  <!-- ⭐ CONTACT OPTIONS ⭐ -->
+  <div class="box">
+    <div class="title">Contact Options</div>
+
+    <p style="font-size:18px; line-height:1.8;">
+      📞 <strong>Phone:</strong> +90 533 000 0000<br>
+      💬 <strong>WhatsApp:</strong> <a href="https://wa.me/905330000000" style="color:#0078ff;">Click to Chat</a><br>
+      ✉️ <strong>Email:</strong> info@sahraba.com<br>
+      📍 <strong>Location:</strong> Kyrenia, North Cyprus
+    </p>
+  </div>
+
+  <!-- ⭐ CONTACT FORM ⭐ -->
+  <div class="box">
+    <div class="title">Send a Message</div>
+
+    <form action="https://sahraba.com/contact" method="GET">
+      <input class="form-input" type="text" name="name" placeholder="Your Name" required>
+      <input class="form-input" type="email" name="email" placeholder="Your Email" required>
+      <input class="form-input" type="text" name="subject" placeholder="Subject" required>
+      <textarea class="form-input" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button class="form-button" type="submit">Send Message</button>
+    </form>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 SAHRABA TRAVEL – All Rights Reserved
+</footer>
+
+</body>
+</html>
