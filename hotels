@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hotels in North Cyprus – SAHRABA TRAVEL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body { margin:0; font-family:Arial, sans-serif; background:#f2f2f2; }
+
+  header {
+    background:#003366;
+    color:white;
+    padding:25px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    animation: fadeIn 1.2s ease forwards;
+  }
+
+  .container {
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    margin-top:40px;
+  }
+
+  .box {
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:40px;
+    animation: fadeIn 1.2s ease forwards;
+  }
+
+  .title {
+    font-size:26px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:bold;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hotel-images {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+  }
+
+  .hotel-images img {
+    width:260px;
+    height:170px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.4s ease;
+  }
+
+  .hotel-images img:hover {
+    transform:scale(1.06);
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+  }
+
+  footer {
+    margin-top:60px;
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>Hotels in North Cyprus</header>
+
+<div class="container">
+
+  <div class="box">
+    <div class="title">Search Hotels</div>
+
+    <!-- Travelpayouts Hotel Widget -->
+    <script async src="https://tp.media/content?currency=usd&trs=264258&shmarker=503475&searchUrl=www.hotellook.com%2Fsearch&locale=en&powered_by=true&promo_id=7879&campaign_id=101"></script>
+  </div>
+
+  <div class="box">
+    <div class="title">Popular Hotel Areas</div>
+
+    <ul style="font-size:18px; line-height:1.8;">
+      <li>Kyrenia (Girne)</li>
+      <li>Famagusta (Mağusa)</li>
+      <li>Iskele</li>
+      <li>Karpaz</li>
+      <li>Lefkoşa</li>
+      <li>Güzelyurt & Lefke</li>
+    </ul>
+
+    <div class="hotel-images">
+      <img src="images/karpaz.jpg" alt="Karpaz Hotels">
+      <img src="images/bellapais.jpg" alt="Kyrenia Hotels">
+      <img src="images/CPRUS2.jpg" alt="Beach Hotels">
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 SAHRABA TRAVEL – All Rights Reserved
+</footer>
+
+</body>
+</html>
